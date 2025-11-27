@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Project Activity 4 - Presentation</title>
+<style>
+    body { margin:0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #1F1F1F; color: #fff; overflow: hidden;}
+    .slide { display: none; padding: 50px; height: 100vh; box-sizing: border-box; text-align: center; }
+    .active { display: block; animation: fade 0.8s; }
+    h1, h2 { color: #00FFAA; margin-bottom: 20px; }
+    p, li { font-size: 1.2em; line-height: 1.6; }
+    ul { list-style: none; padding: 0; }
+    li { margin: 10px 0; }
+    .nav { position: fixed; bottom: 20px; width: 100%; text-align: center; }
+    .nav button { padding: 10px 20px; font-size: 1em; border:none; border-radius: 5px; margin: 0 10px; cursor: pointer; background: #00FFAA; color: #000; }
+    @keyframes fade { from {opacity: 0;} to {opacity: 1;} }
+</style>
+</head>
+<body>
+
+<div class="slide active">
+    <h1>Project Activity 4</h1>
+    <h2>Automated Software Testing & Deployment</h2>
+    <p>Welcome to our project presentation!</p>
+</div>
+
+<div class="slide">
+    <h2>A. Features Implemented from Backlog</h2>
+    <ul>
+        <li>Automated IP information fetch (IPv4/IPv6)</li>
+        <li>Automated testing using pytest</li>
+        <li>CI/CD workflow simulation for commits</li>
+    </ul>
+</div>
+
+<div class="slide">
+    <h2>B. Objectives of These Features</h2>
+    <ul>
+        <li>Ensure IP info is fetched automatically and accurately</li>
+        <li>Catch code issues early using automated testing</li>
+        <li>Prevent broken commits using CI/CD best practices</li>
+    </ul>
+</div>
+
+<div class="slide">
+    <h2>C. Why These Features Were Chosen</h2>
+    <ul>
+        <li>IP fetch is a core functionality of the application</li>
+        <li>Automated testing improves reliability and saves debugging time</li>
+        <li>CI/CD workflow ensures team productivity and code stability</li>
+    </ul>
+</div>
+
+<div class="slide">
+    <h2>D. Team Member Roles & Skillsets</h2>
+    <ul>
+        <li>Alaine Nicole D. Constantino: Project Manager / Python Developer | Python, Git, CI/CD, DevOps basics</li>
+        <li>Gracel Anne Belleca: Frontend Developer | HTML/CSS, UI design</li>
+        <li>Johanna Anne De Pano: Backend Developer | Python, APIs</li>
+        <li>Daryl Tumaneng: Tester / DevOps | Automated testing, GitHub Actions</li>
+    </ul>
+</div>
+
+<div class="slide">
+    <h2>E. Project Strategy / Plan</h2>
+    <ul>
+        <li>Set up Python project structure</li>
+        <li>Implement IP info functionality</li>
+        <li>Write automated tests using pytest</li>
+        <li>Simulate CI/CD pipeline using GitHub Actions</li>
+        <li>Run and validate all tests before merging any code</li>
+    </ul>
+</div>
+
+<div class="slide">
+    <h2>F. Test Cases / Results</h2>
+    <p>2 test cases passed successfully using pytest.</p>
+</div>
+
+<div class="slide">
+    <h2>G. Team Activities & Reflections</h2>
+    <ul>
+        <li>Enjoyed collaborating as a team and seeing automated testing catch issues early.</li>
+        <li>Some merge conflicts; resolved using Git and careful commit reviews.</li>
+        <li>Initial Python import errors; fixed module paths and function signatures.</li>
+        <li>Each member handled their tasks; code review and testing ensured accountability.</li>
+        <li>Consensus-based decision-making; major changes discussed in team meetings.</li>
+        <li>Good communication is key; automated testing and CI/CD improved workflow.</li>
+    </ul>
+</div>
+
+<div class="nav">
+    <button onclick="prevSlide()">&#10094; Prev</button>
+    <button onclick="nextSlide()">Next &#10095;</button>
+</div>
+
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+
+function showSlide(index) {
+    slides.forEach((s,i)=> s.classList.remove('active'));
+    slides[index].classList.add('active');
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+}
+</script>
+
+</body>
+</html>

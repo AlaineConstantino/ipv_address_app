@@ -1,0 +1,89 @@
+# project_activity4_report_html.py
+
+report_html = """
+<html>
+<head>
+    <title>Project Activity 4 Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; background-color: #f4f4f4; }
+        h2 { color: #2E86C1; }
+        ul { margin-bottom: 20px; }
+        li { margin-bottom: 5px; }
+        .section { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h2>A. Features Implemented from Backlog</h2>
+        <ul>
+            <li>Automated IP information fetch (IPv4/IPv6)</li>
+            <li>Automated testing using pytest</li>
+            <li>CI/CD workflow simulation for commits</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>B. Objectives of These Features</h2>
+        <ul>
+            <li>Ensure IP info is fetched automatically and accurately</li>
+            <li>Catch code issues early using automated testing</li>
+            <li>Prevent broken commits using CI/CD best practices</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>C. Why These Features Were Chosen</h2>
+        <ul>
+            <li>IP fetch is a core functionality of the application</li>
+            <li>Automated testing improves reliability and saves debugging time</li>
+            <li>CI/CD workflow ensures team productivity and code stability</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>D. Team Member Roles and Skillsets</h2>
+        <ul>
+            <li>Alaine Nicole D. Constantino: Project Manager / Python Developer | Skills: Python, Git, CI/CD, DevOps basics</li>
+            <li>Gracel Anne Belleca: Frontend Developer | Skills: HTML/CSS, UI design</li>
+            <li>Johanna Anne De Pano: Backend Developer | Skills: Python, APIs</li>
+            <li>Daryl Tumaneng: Tester / DevOps | Skills: Automated testing, GitHub Actions</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>E. Project Strategy / Plan</h2>
+        <ul>
+            <li>Set up Python project structure</li>
+            <li>Implement IP info functionality</li>
+            <li>Write automated tests using pytest</li>
+            <li>Simulate CI/CD pipeline using GitHub Actions</li>
+            <li>Run and validate all tests before merging any code</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>F. Test Cases / Results</h2>
+        <p>2 test cases passed successfully using pytest.</p>
+    </div>
+
+    <div class="section">
+        <h2>G. Team Activities and Reflections</h2>
+        <ul>
+            <li>Enjoyed collaborating as a team and seeing automated testing catch issues early.</li>
+            <li>Some merge conflicts; resolved using Git and careful commit reviews.</li>
+            <li>Initial Python import errors; fixed module paths and function signatures.</li>
+            <li>Each member handled their tasks; code review and testing ensured accountability.</li>
+            <li>Consensus-based decision-making; major changes discussed in team meetings.</li>
+            <li>Good communication is key; automated testing and CI/CD improved workflow.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
+"""
+
+# Save the HTML to a file
+with open("project_activity4_report.html", "w") as f:
+    f.write(report_html)
+
+print("HTML report generated: project_activity4_report.html")
